@@ -16,11 +16,11 @@ class FlaskTestCase(unittest.TestCase):
         resp = self.app.get('/hello/world')
         self.assertEquals(resp.data, '"Hello World!"\n')
 
-    def test_universe_correct_http_response(self)
+    def test_universe_correct_http_response(self):
         resp = self.app.get('/hello/universe')
         self.assertEquals(resp.status_code, 200)
 
-    def test_universe_correct_http_content(self)
+    def test_universe_correct_http_content(self):
         resp = self.app.get('/hello/universe')
         self.assertEquals(resp.data, '"Hello Universe!"\n')
 
